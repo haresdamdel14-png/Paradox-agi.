@@ -1,0 +1,6 @@
+{
+  "name": "Paradox AGI",
+  "description": "هوش مصنوعی پیشرفته 𝙋𝙖𝙧𝙖𝙙𝙤𝙭 AGI - چت هوشمند، پردازش متن، عکس و صدا با دیتابیس آفلاین",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

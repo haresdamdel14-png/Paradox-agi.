@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Vazirmatn', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #08090c;
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Matte & Tactile Embossed effects */
+.matte-surface {
+  background: linear-gradient(145deg, #14161b 0%, #0c0e12 100%);
+  box-shadow: 
+    0 10px 25px -5px rgba(0, 0, 0, 0.6),
+    0 8px 10px -6px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.matte-panel {
+  background: #0d0f14;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.06),
+    0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+.embossed-button {
+  background: linear-gradient(180deg, #1e222b 0%, #111317 100%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 
+    0 4px 10px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.6);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.embossed-button:hover {
+  background: linear-gradient(180deg, #252b36 0%, #15181e 100%);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 
+    0 6px 14px rgba(0, 0, 0, 0.5),
+    inset 0 1px 2px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.embossed-button:active {
+  background: linear-gradient(180deg, #0e1014 0%, #161920 100%);
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    inset 0 2px 4px rgba(0, 0, 0, 0.9);
+  transform: translateY(1px);
+}
+
+.embossed-badge {
+  background: linear-gradient(180deg, #151820 0%, #0d0f13 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    inset 0 1px 1px rgba(255, 255, 255, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.embossed-input {
+  background: #090b0e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.6),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.03);
+}
+
+.embossed-input:focus-within {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f242d;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333a47;
+}
+
+/* Markdown styling inside messages */
+.prose-dark {
+  line-height: 1.7;
+}
+
+.prose-dark p {
+  margin-bottom: 0.75rem;
+}
+
+.prose-dark p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-dark pre {
+  background: #06080a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+  direction: ltr;
+  text-align: left;
+}
+
+.prose-dark code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875em;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.15em 0.35em;
+  border-radius: 0.25rem;
+}
+
+.prose-dark pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.prose-dark ul, .prose-dark ol {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.prose-dark ul {
+  list-style-type: disc;
+}
+
+.prose-dark ol {
+  list-style-type: decimal;
+}
+
+.prose-dark blockquote {
+  border-right: 3px solid #4b5563;
+  padding-right: 0.75rem;
+  margin: 0.75rem 0;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+html[dir="ltr"] .prose-dark blockquote {
+  border-right: none;
+  border-left: 3px solid #4b5563;
+  padding-right: 0;
+  padding-left: 0.75rem;
+}

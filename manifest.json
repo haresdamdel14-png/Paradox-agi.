@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Paradox AGI",
+  "short_name": "Paradox AGI",
+  "description": "هوش مصنوعی پیشرفته 𝙋𝙖𝙧𝙖𝙙𝙤𝙭 AGI - پردازش متن، عکس و صدا با دیتابیس آفلاین",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#090a0d",
+  "background_color": "#090a0d",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
