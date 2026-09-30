@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Paradox AGI</title>
+    <meta name="description" content="هوش مصنوعی پیشرفته 𝙋𝙖𝙧𝙖𝙙𝙤𝙭 AGI - چت هوشمند، پردازش متن، عکس و صدا با دیتابیس آفلاین" />
+    <meta property="og:title" content="Paradox AGI" />
+    <meta property="og:description" content="هوش مصنوعی پیشرفته 𝙋𝙖𝙧𝙖𝙙𝙤𝙭 AGI - چت هوشمند، پردازش متن، عکس و صدا با دیتابیس آفلاین" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#090a0d" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Paradox AGI" />
+    <link rel="manifest" href="/assets/manifest-z2CS3I1A.json" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-D6PCmxo0.png" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icon-BROTphhx.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-CNJR5dLd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D3tjQ4QT.css">
+  </head>
+  <body class="bg-[#090a0d] text-gray-100 antialiased selection:bg-neutral-700 selection:text-white overflow-hidden">
+    <div id="root"></div>
+    <script>
+      window.deferredInstallPrompt = null;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        window.deferredInstallPrompt = e;
+        window.dispatchEvent(new CustomEvent('pwa-prompt-ready', { detail: e }));
+      });
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.log('SW registration note:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+
